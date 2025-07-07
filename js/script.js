@@ -1,5 +1,3 @@
-// script.js - CRUD completo para Dueños, Mascotas, Veterinarios y Reservas
-
 document.addEventListener("DOMContentLoaded", () => {
   let duenos = JSON.parse(localStorage.getItem("duenos")) || [];
   let mascotas = JSON.parse(localStorage.getItem("mascotas")) || [];
