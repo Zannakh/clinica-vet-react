@@ -22,14 +22,14 @@ Este es un proyecto desarrollado en JavaScript puro, HTML y CSS (con Bootstrap),
 
 ## 📂 Estructura del proyecto
 
-Felipe Larrañaga/
-├── css/
-│ └── style.css
-├── js/
-│ └── script.js
-├── index.html
-├── README.md
-└── img/
+- Clinica Veterinaria/
+- ├── css/
+- │ └── style.css
+- ├── js/
+- │ └── script.js
+- ├── index.html
+- ├── README.md
+- └── img/
 
 
 ## 📝 Cómo usar
