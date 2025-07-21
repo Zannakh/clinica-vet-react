@@ -1,0 +1,52 @@
+/* === GLOBAL.CSS CORREGIDO === */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* Contenedor principal */
+main.container {
+  flex: 1;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Botones */
+button {
+  transition: background-color 0.2s ease-in-out;
+}
+button:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
