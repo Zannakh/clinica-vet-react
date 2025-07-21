@@ -1,63 +1,96 @@
-# 🐾 Clínica Veterinaria - React + API REST
+# 🐾 Clínica Veterinaria – React + API REST
 
-Aplicación web desarrollada con React que permite gestionar datos de una clínica veterinaria, incluyendo **dueños, mascotas, veterinarios y reservas de procedimientos**, consumiendo una API RESTful.
+Aplicación web desarrollada con **React** para la gestión de una clínica veterinaria. Permite administrar **dueños, mascotas, veterinarios y reservas de procedimientos**, consumiendo una **API RESTful externa**.
 
-## 🚀 Tecnologías
+---
 
-- React (Vite)
-- React Router DOM
-- Bootstrap 5
-- Fetch API (GET, POST, PUT, DELETE)
+## 🚀 Tecnologías utilizadas
 
-## 📂 Estructura
+- ⚛️ React (Vite)
+- 🔗 React Router DOM
+- 🎨 Bootstrap 5
+- 🌐 Fetch API (GET, POST, PUT, DELETE)
 
-- src/
-- ├── components/ # Componentes reutilizables
-- ├── pages/ # Vistas principales (Dueños, Mascotas, etc.)
-- ├── services/ # Funciones para consumir la API
-- ├── App.jsx # Componente raíz con rutas
-- ├── main.jsx # Punto de entrada
+---
 
+## 📁 Estructura del proyecto
+
+```
+src/
+├── assets/             # Recursos estáticos (imágenes, íconos, etc.)
+├── components/         # Componentes reutilizables (formularios, tablas, navbar, etc.)
+├── pages/              # Vistas principales (Dueños, Mascotas, Reservas, Veterinarios)
+├── services/           # Funciones para consumir la API REST
+├── App.jsx             # Componente principal con rutas
+├── main.jsx            # Punto de entrada
+├── App.css             # Estilos globales del componente App
+├── global.css          # Estilos generales compartidos
+index.html              # Plantilla HTML base (raíz del proyecto)
+```
+
+---
 
 ## 🧩 Funcionalidades
 
 ✅ CRUD completo para:
 
-- **Dueños** (nombre, RUT, teléfono, correo)
-- **Mascotas** (nombre, tipo, edad, raza, dueño)
-- **Veterinarios** (nombre, especialidad, teléfono)
+- **Dueños** (nombre, RUT, teléfono, correo)  
+- **Mascotas** (nombre, tipo, edad, raza, dueño)  
+- **Veterinarios** (nombre, especialidad, teléfono)  
 - **Reservas** (mascota, veterinario, procedimiento, fecha y hora)
 
-✅ Relación entre entidades (mascota ↔ dueño, reserva ↔ mascota y veterinario)  
+✅ Relaciones entre entidades:  
+&nbsp;&nbsp;&nbsp;&nbsp;• Mascota ↔ Dueño  
+&nbsp;&nbsp;&nbsp;&nbsp;• Reserva ↔ Mascota y Veterinario
+
 ✅ Formularios con validación  
-✅ Navegación por rutas  
-✅ Diseño responsive y limpio con Bootstrap
+✅ Navegación con React Router  
+✅ Diseño responsive y moderno con Bootstrap
 
-## 🔗 API utilizada
+---
 
-API RESTful externa proporcionada por el docente:
+## 🔗 API RESTful utilizada
 
-- `/api/dueno`
-- `/api/mascota`
-- `/api/veterinario`
-- `/api/reserva_procedimiento`
+API proporcionada por el docente, con las siguientes rutas:
 
-> Base URL: `http://67.205.142.104:3000`
+- `GET /api/dueno`
+- `GET /api/mascota`
+- `GET /api/veterinario`
+- `GET /api/reserva_procedimiento`
 
-## ▶️ Cómo ejecutar
+> 🌐 **Base URL**: `http://67.205.142.104:3000`
 
-1. Clonar el repositorio o descomprimir el .zip entregado.
-2. Instalar dependencias:
+---
+
+## ▶️ ¿Cómo ejecutar el proyecto en local?
+
+1. Clona el repositorio o descomprime el archivo `.zip` entregado.
+2. Instala las dependencias:
    ```bash
    npm install
-3. Ejecutar la app:
-    ```bash
-    npm run dev
-4. Abrir en el navegador: http://localhost:5173
+   ```
+3. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+4. Abre la app en tu navegador:  
+   👉 [http://localhost:5173](http://localhost:5173)
 
-👨‍💻 Autor
-Felipe Larrañaga
-Estudiante INACAP
-Repositorio GitHub: @Zannakh
+---
 
-📌 Proyecto realizado para la evaluación N°3 de Programación Front End, Clínica Veterinaria, con React y consumo de API.
+## 🌍 Versión en línea
+
+Puedes acceder a la versión desplegada en GitHub Pages aquí:  
+👉 [https://zannakh.github.io/clinica-vet-react/](https://zannakh.github.io/clinica-vet-react/)
+
+---
+
+## 👨‍💻 Autor
+
+**Felipe Larrañaga**  
+Estudiante INACAP  
+GitHub: [@Zannakh](https://github.com/Zannakh)
+
+---
+
+📌 *Proyecto realizado como parte de la Evaluación N°3 de Programación Front End (Clínica Veterinaria) usando React y consumo de API.*
